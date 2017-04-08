@@ -41,6 +41,11 @@ namespace VirtualPet_Template
                         break;
 
                     //TODO we need to add more cases for the other ways to interact with our pet
+                    case 2:
+
+                        myPet.Clean();
+                        Console.WriteLine("You cleaned your pet tiger!");
+                        break;
 
                     case 10:
 
