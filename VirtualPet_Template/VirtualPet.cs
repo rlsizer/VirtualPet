@@ -74,8 +74,15 @@ namespace VirtualPet_Template
         public void MyPetStatus()
         {
             Console.WriteLine(name);
+            Console.WriteLine("Health: " + health);
             Console.WriteLine("Hunger: " + hunger);
             //TODO account for more fields
+            Console.WriteLine("Thirst: " + thirst);
+            Console.WriteLine("Waste: " + waste);
+            Console.WriteLine("Boredom: " + boredom);
+            Console.WriteLine("Fatigue: " + fatigue);
+            Console.WriteLine("Hygiene: " + hygiene);
+            
         }
     }
 }
