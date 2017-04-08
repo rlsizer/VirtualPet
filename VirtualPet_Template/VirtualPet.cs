@@ -54,20 +54,105 @@ namespace VirtualPet_Template
 
         
         //this method can be called to lower the hunger score (0 means tiger has an empty stomach)
-        public void HungerDecrement()
+        public void HungerScoreLower()
         {
             //TODO modify these values to anything you see fit
             this.hunger = hunger - 1;
         }
 
         //this method can be called to alleviate the hunger and raise the hunger score (10 means tiger has a full stomach)
-        public void HungerAlleviate()
+        public void HungerScoreHigher()
         {   
             //TODO modify these values to anything you see fit
-            this.hunger = hunger +2;
+            this.hunger = hunger +5;
         }
 
+        
         //TODO we need to add more methods to modify the other fields
+        //this method can be called to decrease the health of the pet tiger
+        public void HealthDecrease()
+        {
+            this.health = health - 1;
+
+        }
+
+        //this method can be called to increase the health of the pet tiger 
+        public void HealthIncrease()
+        {
+            this.health = health + 2;
+        }
+
+        //this method can be called to lower the thirst score of the pet tiger
+        public void thirstScoreLower()
+        {
+
+            this.thirst = thirst - 3;
+        }
+
+        //this method can be called to raise the thirst score of the pet tiger
+        public void thirstScoreHigher()
+        {
+
+            this.thirst = 10;
+        }
+
+        //this method can be called to lower the waste score of the pet tiger
+        public void wasteScoreLower()
+        {
+
+            this.waste = waste - 2;
+        }
+
+        //this method can be called to raise the waste score of the pet tiger
+        public void wasteScoreHigher()
+        {
+
+            this.waste = 10;
+        }
+
+        //this method can be called to lower the boredom score of the pet tiger
+        public void boredomScoreLower()
+        {
+
+            this.boredom = boredom - 2;
+        }
+
+        //this method can be called to raise the boredom score of the pet tiger
+        public void boredomScoreHigher()
+        {
+
+            this.boredom = 10;
+            
+        }
+
+        //this method can be called to lower the fatigue score of the pet tiger
+        public void fatigueScoreLower()
+        {
+
+            this.fatigue = fatigue - 2;
+        }
+
+        //this method can be called to raise the fatigue score of the pet tiger
+        public void fatigueScoreHigher()
+        {
+
+            this.fatigue = 10;
+        }
+
+        //this method can be called to lower the hygiene score of the pet tiger
+        public void hygieneScoreLower()
+        {
+
+            this.hygiene = hygiene - 1;
+        }
+
+        //this method can be called to raise the hygiene score of the pet tiger
+        public void hygieneScoreHigher()
+        {
+
+            this.hygiene = 10;
+        }
+        
 
 
         //method for stats of virtual pet
