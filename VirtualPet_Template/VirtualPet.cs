@@ -168,7 +168,18 @@ namespace VirtualPet_Template
         public void FatigueScoreHigher()
         {
 
-            this.fatigue = 10;
+            //Use if and else if to determine when it's appropriate to raise the pet's fatigue score
+            if (fatigue < 9)
+            {
+
+                this.fatigue = fatigue + 2;
+            }
+
+
+            else if (fatigue == 9)
+            {
+                this.fatigue = fatigue + 1;
+            }
         }
 
         //this method can be called to lower the hygiene score of the pet tiger
@@ -182,7 +193,18 @@ namespace VirtualPet_Template
         public void HygieneScoreHigher()
         {
 
-            this.hygiene = 10;
+            //Use if and else if to determine when it's appropriate to raise the pet's hygiene score
+            if (hygiene < 9)
+            {
+
+                this.hygiene = hygiene + 2;
+            }
+
+
+            else if (hygiene == 9)
+            {
+                this.hygiene = hygiene + 1;
+            }
         }
         
         
