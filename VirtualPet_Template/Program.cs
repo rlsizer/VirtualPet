@@ -34,7 +34,7 @@ namespace VirtualPet_Template
             {
                 //TODO fill this out with more options to interact with the pet
                 //Added seven menu options for user
-                Console.Clear(); //clear the console screen to give menu a fresh feel for each user selection
+                Console.WriteLine();
                 Console.WriteLine("Please select an option:");
                 Console.WriteLine("1 - Feed " + tigerName);
                 Console.WriteLine("2 - Give " + tigerName + " a drink of water.");
@@ -96,7 +96,7 @@ namespace VirtualPet_Template
                     case 7:
 
                         Console.WriteLine("Thank you for playing.."+tigerName+" is gonna miss you!!");
-                        break;
+                        return;
 
                     default:
 
@@ -106,12 +106,25 @@ namespace VirtualPet_Template
 
                 //TODO We can put method calls here so the pet can have some values change automatically
                 //Feel free to add, remove, or modify which methods are called here
-                myPet.HungerScoreLower();
-                myPet.ThirstScoreLower();
-                myPet.WasteScoreLower();
                 
 
-            } while (selectedOption != 10);
+                if (selectedOption != 2)
+                {
+                    myPet.ThirstScoreLower();
+                }
+
+                
+               
+
+                
+                
+                myPet.WasteScoreLower();
+                myPet.BoredomScoreLower();
+                myPet.FatigueScoreLower();
+                myPet.HygieneScoreLower();
+                
+
+            } while (selectedOption != 7);
 
         }
     }

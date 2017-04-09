@@ -16,7 +16,6 @@ namespace VirtualPet_Template
         private int thirst;
         private int waste;
         private int boredom;
-        private int health;
         private int fatigue;
         private int hygiene;
 
@@ -27,15 +26,14 @@ namespace VirtualPet_Template
         public VirtualPet()
         {
             this.name = "Lee";
-            this.hunger = 20;
+            this.hunger = 10;
             //TODO account for more fields
             //Added the rest of the variables and assigned default values to them
-            this.thirst = 20;
-            this.waste = 20;
-            this.boredom = 20;
-            this.health = 20;
-            this.fatigue = 20;
-            this.hygiene = 20;
+            this.thirst = 10;
+            this.waste = 10;
+            this.boredom = 10;
+            this.fatigue = 10;
+            this.hygiene = 10;
         }
 
         //TODO how can we set things with our construtor
@@ -47,7 +45,6 @@ namespace VirtualPet_Template
             this.thirst = 10;
             this.waste = 10;
             this.boredom = 10;
-            this.health = 10;
             this.fatigue = 10;
             this.hygiene = 10;
         }
@@ -81,18 +78,7 @@ namespace VirtualPet_Template
 
         
         //TODO we need to add more methods to modify the other fields
-        //this method can be called to decrease the health of the pet tiger
-        public void HealthDecrease()
-        {
-            this.health = health - 1;
-
-        }
-
-        //this method can be called to increase the health of the pet tiger 
-        public void HealthIncrease()
-        {
-            this.health = health + 2;
-        }
+        
 
         //this method can be called to lower the thirst score of the pet tiger
         public void ThirstScoreLower()
@@ -165,13 +151,14 @@ namespace VirtualPet_Template
             this.hygiene = 10;
         }
         
+        
+
 
 
         //method for stats of virtual pet
         public void MyPetStatus()
         {
             Console.WriteLine(name);
-            Console.WriteLine("Health: " + health);
             Console.WriteLine("Hunger: " + hunger);
             //TODO account for more fields
             Console.WriteLine("Thirst: " + thirst);
