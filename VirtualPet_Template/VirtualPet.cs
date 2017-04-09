@@ -19,8 +19,8 @@ namespace VirtualPet_Template
         private int fatigue;
         private int hygiene;
 
-
         //TODO fill in more fields
+
 
         //this defaut constructor sets options without giving us any options
         public VirtualPet()
@@ -61,18 +61,19 @@ namespace VirtualPet_Template
         public void HungerScoreHigher()
         {
             //TODO modify these values to anything you see fit
-            if (hunger < 6)
+            //Use if and else if to determine when it's appropriate to raise the pet's hunger score
+            if (hunger < 9)
             {
-                //Change the member variable and use the parameter
-                this.hunger = hunger + 5;
+
+                this.hunger = hunger + 2;
             }
 
 
-            else
+            else if (hunger == 9)
             {
-                //Alert user that there is a maximum cap of 100 hit points for the hero
-                Console.WriteLine("Your pet tiger is not that hungry right now.");
+                this.hunger = hunger + 1;
             }
+            
             
         }
 
@@ -84,14 +85,25 @@ namespace VirtualPet_Template
         public void ThirstScoreLower()
         {
 
-            this.thirst = thirst - 3;
+            this.thirst = thirst - 1;
         }
 
         //this method can be called to raise the thirst score of the pet tiger
         public void ThirstScoreHigher()
         {
 
-            this.thirst = 10;
+            //Use if and else if to determine when it's appropriate to raise the pet's thirst score
+            if (thirst < 9)
+            {
+
+                this.thirst = thirst + 2;
+            }
+
+
+            else if (thirst == 9)
+            {
+                this.thirst = thirst + 1;
+            }
         }
 
         //this method can be called to lower the waste score of the pet tiger
