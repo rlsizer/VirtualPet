@@ -15,6 +15,17 @@ namespace VirtualPet_Template
 
 
             //TODO add a greeting for the user. you can also let the user name the pet if you like
+            //Added greeting for user and prompted user to input a name for their pet tiger
+            Console.WriteLine("Hello! Welcome to Virtual Pet Tiger.");
+            Console.WriteLine("\r\n\r\nYou will be taking care of your very own pet tiger!");
+            Console.WriteLine("\r\n\r\nPlease enter a name for your tiger: ");
+
+            //Declare string variable and define it with user-given pet name
+            string tigerName = Console.ReadLine();
+
+            //Keep user informed about the name they chose 
+            Console.WriteLine("\r\n\r\nAwesome! Meet " + tigerName + ", your new pet tiger!");
+
 
             int selectedOption;
 
