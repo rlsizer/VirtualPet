@@ -110,14 +110,25 @@ namespace VirtualPet_Template
         public void WasteScoreLower()
         {
 
-            this.waste = waste - 2;
+            this.waste = waste - 1;
         }
 
         //this method can be called to raise the waste score of the pet tiger
         public void WasteScoreHigher()
         {
 
-            this.waste = 10;
+            //Use if and else if to determine when it's appropriate to raise the pet's waste score
+            if (waste < 9)
+            {
+
+                this.waste = waste + 2;
+            }
+
+
+            else if (waste == 9)
+            {
+                this.waste = waste + 1;
+            }
         }
 
         //this method can be called to lower the boredom score of the pet tiger
@@ -131,15 +142,26 @@ namespace VirtualPet_Template
         public void BoredomScoreHigher()
         {
 
-            this.boredom = 10;
-            
+            //Use if and else if to determine when it's appropriate to raise the pet's boredom score
+            if (boredom < 9)
+            {
+
+                this.boredom = boredom + 2;
+            }
+
+
+            else if (boredom == 9)
+            {
+                this.boredom = boredom + 1;
+            }
+
         }
 
         //this method can be called to lower the fatigue score of the pet tiger
         public void FatigueScoreLower()
         {
 
-            this.fatigue = fatigue - 2;
+            this.fatigue = fatigue - 1;
         }
 
         //this method can be called to raise the fatigue score of the pet tiger
