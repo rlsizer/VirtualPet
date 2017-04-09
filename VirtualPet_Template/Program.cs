@@ -57,6 +57,8 @@ namespace VirtualPet_Template
                     case 1:
 
                         myPet.HungerScoreHigher();
+                        myPet.ThirstScoreLower(); //Tiger gets thirsty when eating
+                        myPet.WasteScoreLower(); //Tiger will have to go to the bathroom
                         Console.WriteLine("\r\n\r\nThank you for feeding "+tigerName+"!");
                         break;
 
@@ -65,6 +67,7 @@ namespace VirtualPet_Template
                     case 2:
 
                         myPet.ThirstScoreHigher();
+                        myPet.WasteScoreLower(); //Tiger will have to go to the bathroom
                         Console.WriteLine("\r\n\r\nYou gave "+tigerName+" some water!");
                         break;
 
@@ -77,24 +80,29 @@ namespace VirtualPet_Template
                     case 4:
 
                         myPet.BoredomScoreHigher();
+                        myPet.HungerScoreLower(); //Tiger works up an appetite during an adventure
+                        myPet.ThirstScoreLower(); //Tiger is thirsty after all that adventuring
+                        myPet.FatigueScoreLower(); //Exciting adventures make tiger sleepy
                         Console.WriteLine("\r\n\r\nYou went on a wild adventure with " + tigerName + "!!");
                         break;
 
                     case 5:
 
                         myPet.FatigueScoreHigher();
+                        myPet.WasteScoreLower(); //Tiger may need to use the bathroom after waking up
                         Console.WriteLine("\r\n\r\n" + tigerName + " is well-rested now thanks to a nice long cat nap.");
                         break;
 
                     case 6:
 
                         myPet.HygieneScoreHigher();
-                        Console.WriteLine("\r\n\r\nWonderful!" + tigerName + " is sparkling clean!");
+                        myPet.BoredomScoreLower(); //Bathing is kinda boring for tiger 
+                        Console.WriteLine("\r\n\r\nWonderful! " + tigerName + " is sparkling clean!");
                         break;
 
                     case 7:
 
-                        Console.WriteLine("Thank you for playing.."+tigerName+" is gonna miss you!!");
+                        Console.WriteLine("Thank you for playing.. "+tigerName+" is gonna miss you!!");
                         return;
 
                     default:
@@ -110,20 +118,12 @@ namespace VirtualPet_Template
                 //TODO We can put method calls here so the pet can have some values change automatically
                 //Feel free to add, remove, or modify which methods are called here
 
+                //Use if statements to determine when each score should automatically lower based upon user selections
                 if (selectedOption != 1)
                 {
                     myPet.HungerScoreLower();
                 }
 
-                if (selectedOption != 2)
-                {
-                    myPet.ThirstScoreLower();
-                }
-
-                if (selectedOption != 3)
-                {
-                    myPet.WasteScoreLower();
-                }
 
                 if (selectedOption != 4)
                 {
