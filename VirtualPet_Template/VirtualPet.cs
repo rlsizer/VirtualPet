@@ -54,7 +54,11 @@ namespace VirtualPet_Template
         public void HungerScoreLower()
         {
             //TODO modify these values to anything you see fit
-            this.hunger = hunger - 1;
+            if (hunger <= 10 && hunger > 0)
+            {
+                this.hunger = hunger - 1;
+            }
+            
         }
 
         //this method can be called to alleviate the hunger and raise the hunger score (10 means tiger has a full stomach)
@@ -84,8 +88,11 @@ namespace VirtualPet_Template
         //this method can be called to lower the thirst score of the pet tiger
         public void ThirstScoreLower()
         {
-
-            this.thirst = thirst - 1;
+            if (thirst <= 10 && thirst > 0)
+            {
+                this.thirst = thirst - 1;
+            }
+            
         }
 
         //this method can be called to raise the thirst score of the pet tiger
@@ -109,8 +116,11 @@ namespace VirtualPet_Template
         //this method can be called to lower the waste score of the pet tiger
         public void WasteScoreLower()
         {
-
-            this.waste = waste - 1;
+            if (waste <= 10 && waste > 0)
+            {
+                this.waste = waste - 1;
+            }
+            
         }
 
         //this method can be called to raise the waste score of the pet tiger
@@ -134,8 +144,11 @@ namespace VirtualPet_Template
         //this method can be called to lower the boredom score of the pet tiger
         public void BoredomScoreLower()
         {
-
-            this.boredom = boredom - 2;
+            if (boredom <= 10 && boredom > 0)
+            {
+                this.boredom = boredom - 1;
+            }
+            
         }
 
         //this method can be called to raise the boredom score of the pet tiger
@@ -160,8 +173,11 @@ namespace VirtualPet_Template
         //this method can be called to lower the fatigue score of the pet tiger
         public void FatigueScoreLower()
         {
-
-            this.fatigue = fatigue - 1;
+            if (fatigue <= 10 && fatigue > 0)
+            {
+                this.fatigue = fatigue - 1;
+            }
+            
         }
 
         //this method can be called to raise the fatigue score of the pet tiger
@@ -185,8 +201,11 @@ namespace VirtualPet_Template
         //this method can be called to lower the hygiene score of the pet tiger
         public void HygieneScoreLower()
         {
-
-            this.hygiene = hygiene - 1;
+            if (hygiene <= 10 && hygiene > 0)
+            {
+                this.hygiene = hygiene - 1;
+            }
+        
         }
 
         //this method can be called to raise the hygiene score of the pet tiger
@@ -214,6 +233,7 @@ namespace VirtualPet_Template
         //method for stats of virtual pet
         public void MyPetStatus()
         {
+            Console.WriteLine();
             Console.WriteLine(name);
             Console.WriteLine("Hunger: " + hunger);
             //TODO account for more fields

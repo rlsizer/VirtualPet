@@ -48,8 +48,7 @@ namespace VirtualPet_Template
                 //store user selection in variable and convert to int
                 selectedOption = int.Parse(Console.ReadLine());
 
-                //call on method to give pet status update
-                myPet.MyPetStatus();
+                
 
                 //use switch case to determine reactions to user selections
                 switch (selectedOption)
@@ -104,24 +103,44 @@ namespace VirtualPet_Template
                         break;
                 }
 
+                Console.WriteLine();
+                //call on method to give pet status update
+                myPet.MyPetStatus();
+
                 //TODO We can put method calls here so the pet can have some values change automatically
                 //Feel free to add, remove, or modify which methods are called here
-                
+
+                if (selectedOption != 1)
+                {
+                    myPet.HungerScoreLower();
+                }
 
                 if (selectedOption != 2)
                 {
                     myPet.ThirstScoreLower();
                 }
 
-                
-               
+                if (selectedOption != 3)
+                {
+                    myPet.WasteScoreLower();
+                }
 
+                if (selectedOption != 4)
+                {
+                    myPet.BoredomScoreLower();
+                }
+
+                if (selectedOption != 5)
+                {
+                    myPet.FatigueScoreLower();
+                }
+
+                if (selectedOption != 6)
+                {
+                    myPet.HygieneScoreLower();
+                }
+               
                 
-                
-                myPet.WasteScoreLower();
-                myPet.BoredomScoreLower();
-                myPet.FatigueScoreLower();
-                myPet.HygieneScoreLower();
                 
 
             } while (selectedOption != 7);
