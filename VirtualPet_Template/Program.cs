@@ -25,6 +25,36 @@ namespace VirtualPet_Template
 
             //Keep user informed about the name they chose 
             Console.WriteLine("\r\n\r\nAwesome! Meet " + tigerName + ", your new pet tiger!");
+            string tigerFace = ("                           _" + Environment.NewLine+
+"        __       __       ' `." +Environment.NewLine+
+"      .'  `.  .-'\\`-.  ./   |" +Environment.NewLine+
+"      |     \\-'-'_\\`-`_/    |" +Environment.NewLine+
+"      |      \\--'-\\-._-.'/  )" +Environment.NewLine+
+"      \\  \\ .'.'--'|\\`--._`.-'." +Environment.NewLine+
+"       )`' .''' .'.-L-.`-.\\ '." +Environment.NewLine+
+"      // _'/J '- ///|\\\\|-.``.`'." +Environment.NewLine+
+"    .'/'/ .'.-`( | '|` ..-.'( L- L" +Environment.NewLine+
+"   // |J J|]`((\"\\)\\ J(\".'`J||- |" +Environment.NewLine+
+"  / | |) || Y.`.`\\.' -. L' - J ||| - -" +Environment.NewLine+
+" /. ' |`.J|J\\  ))J' / \"-. \\`'/'/-  \""+Environment.NewLine+
+"J - -  \\  L\\`.-' || .' \\ \\`'J J  |" +Environment.NewLine+
+" | -'_-'. (= `.//.-.__ \" _  L-/.-. |" +Environment.NewLine+
+"| -      )_\\\\`|...(`-.\".''.)/ -.  )---" +Environment.NewLine+
+" | -'')  `\\.::::.`.|/.:.'`-  ``--._" +Environment.NewLine+
+"J - ' -'.'  )./ \\::::::'X::::\\` ``` ____" +Environment.NewLine+
+") \\ ' '//  ///''.__-'--`-\\\\ \\ `__" +Environment.NewLine+
+"|\\' .' /|/ ' '///  ' \"` \\|\\`` -.`--." +Environment.NewLine+
+"| `.'    /.' )  | (       )``-'  . `." +Environment.NewLine+
+"J   `.'_.' /  / '''.____.'.'.-' | `.  `" +Environment.NewLine+
+"(`.   `-.') . \" _.'. .'  '.'`  `." +Environment.NewLine+
+"|`.\\     \'  \\  )' |)/    .- ' |  .'" +Environment.NewLine+
+"/  `.\\    `.\\  /|.'//  .-'    J /" +Environment.NewLine+
+"     `.     \\`\" )//   //       L" +Environment.NewLine+
+"     _ `     ` . /  .''  _.--'' |" +Environment.NewLine+
+"    --._      '|`  .'.'-\"\"-` |\";"+Environment.NewLine);
+
+            Console.WriteLine(tigerFace);
+
 
             //Declare int variable for user menu selection 
             int selectedOption;
@@ -113,6 +143,8 @@ namespace VirtualPet_Template
                 }
 
                 Console.WriteLine();
+                //Print out tiger face to console before each status update
+                Console.WriteLine(tigerFace);
                 //call on method to give pet status update
                 myPet.MyPetStatus();
 
@@ -139,6 +171,7 @@ namespace VirtualPet_Template
                 if (selectedOption != 6)
                 {
                     myPet.HygieneScoreLower();
+                    
                 }
                
                 
@@ -146,6 +179,7 @@ namespace VirtualPet_Template
 
             } while (selectedOption != 7);
 
+            
         }
     }
 }

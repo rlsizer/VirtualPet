@@ -244,5 +244,16 @@ namespace VirtualPet_Template
             Console.WriteLine("Hygiene: " + hygiene);
             
         }
+
+        /* public void MyPetTimer()
+        {
+            EventHandler temp = MyEvent;
+            if (temp != null)
+            {
+                temp();
+            }
+
+        }*/
+
     }
 }
