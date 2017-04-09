@@ -95,42 +95,42 @@ namespace VirtualPet_Template
         }
 
         //this method can be called to lower the thirst score of the pet tiger
-        public void thirstScoreLower()
+        public void ThirstScoreLower()
         {
 
             this.thirst = thirst - 3;
         }
 
         //this method can be called to raise the thirst score of the pet tiger
-        public void thirstScoreHigher()
+        public void ThirstScoreHigher()
         {
 
             this.thirst = 10;
         }
 
         //this method can be called to lower the waste score of the pet tiger
-        public void wasteScoreLower()
+        public void WasteScoreLower()
         {
 
             this.waste = waste - 2;
         }
 
         //this method can be called to raise the waste score of the pet tiger
-        public void wasteScoreHigher()
+        public void WasteScoreHigher()
         {
 
             this.waste = 10;
         }
 
         //this method can be called to lower the boredom score of the pet tiger
-        public void boredomScoreLower()
+        public void BoredomScoreLower()
         {
 
             this.boredom = boredom - 2;
         }
 
         //this method can be called to raise the boredom score of the pet tiger
-        public void boredomScoreHigher()
+        public void BoredomScoreHigher()
         {
 
             this.boredom = 10;
@@ -138,28 +138,28 @@ namespace VirtualPet_Template
         }
 
         //this method can be called to lower the fatigue score of the pet tiger
-        public void fatigueScoreLower()
+        public void FatigueScoreLower()
         {
 
             this.fatigue = fatigue - 2;
         }
 
         //this method can be called to raise the fatigue score of the pet tiger
-        public void fatigueScoreHigher()
+        public void FatigueScoreHigher()
         {
 
             this.fatigue = 10;
         }
 
         //this method can be called to lower the hygiene score of the pet tiger
-        public void hygieneScoreLower()
+        public void HygieneScoreLower()
         {
 
             this.hygiene = hygiene - 1;
         }
 
         //this method can be called to raise the hygiene score of the pet tiger
-        public void hygieneScoreHigher()
+        public void HygieneScoreHigher()
         {
 
             this.hygiene = 10;

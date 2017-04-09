@@ -65,31 +65,31 @@ namespace VirtualPet_Template
                     //when the user selects option two we give tiger a drink
                     case 2:
 
-                        myPet.thirstScoreHigher();
+                        myPet.ThirstScoreHigher();
                         Console.WriteLine("\r\n\r\nYou gave "+tigerName+" some water!");
                         break;
 
                     case 3:
 
-                        myPet.wasteScoreHigher();
+                        myPet.WasteScoreHigher();
                         Console.WriteLine("\r\n\r\n"+ tigerName + " went out for a much needed bathroom break.");
                         break;
 
                     case 4:
 
-                        myPet.boredomScoreHigher();
+                        myPet.BoredomScoreHigher();
                         Console.WriteLine("\r\n\r\nYou went on a wild adventure with " + tigerName + "!!");
                         break;
 
                     case 5:
 
-                        myPet.fatigueScoreHigher();
+                        myPet.FatigueScoreHigher();
                         Console.WriteLine("\r\n\r\n" + tigerName + " is well-rested now thanks to a nice long cat nap.");
                         break;
 
                     case 6:
 
-                        myPet.hygieneScoreHigher();
+                        myPet.HygieneScoreHigher();
                         Console.WriteLine("\r\n\r\nWonderful!" + tigerName + " is sparkling clean!");
                         break;
 
@@ -106,7 +106,10 @@ namespace VirtualPet_Template
 
                 //TODO We can put method calls here so the pet can have some values change automatically
                 //Feel free to add, remove, or modify which methods are called here
-                myPet.HungerIncrease();
+                myPet.HungerScoreLower();
+                myPet.ThirstScoreLower();
+                myPet.WasteScoreLower();
+                
 
             } while (selectedOption != 10);
 
