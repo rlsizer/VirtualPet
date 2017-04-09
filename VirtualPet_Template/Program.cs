@@ -35,7 +35,8 @@ namespace VirtualPet_Template
                 //TODO fill this out with more options to interact with the pet
                 //Added seven menu options for user
                 Console.WriteLine();
-                Console.WriteLine("Please select an option:");
+                Console.WriteLine(tigerName + " the Tiger");
+                Console.WriteLine("\r\n\r\nPlease select an option:");
                 Console.WriteLine("1 - Feed " + tigerName);
                 Console.WriteLine("2 - Give " + tigerName + " a drink of water.");
                 Console.WriteLine("3 - Take " + tigerName + " out for a bathroom break.");
