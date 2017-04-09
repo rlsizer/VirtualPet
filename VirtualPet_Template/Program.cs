@@ -58,19 +58,44 @@ namespace VirtualPet_Template
                     case 1:
 
                         myPet.HungerScoreHigher();
-                        Console.WriteLine("Thank you for feeding "+tigerName+"!");
+                        Console.WriteLine("\r\n\r\nThank you for feeding "+tigerName+"!");
                         break;
 
                     //TODO we need to add more cases for the other ways to interact with our pet
+                    //when the user selects option two we give tiger a drink
                     case 2:
 
-                        myPet.Clean();
-                        Console.WriteLine("You cleaned your pet tiger!");
+                        myPet.thirstScoreHigher();
+                        Console.WriteLine("\r\n\r\nYou gave "+tigerName+" some water!");
+                        break;
+
+                    case 3:
+
+                        myPet.wasteScoreHigher();
+                        Console.WriteLine("\r\n\r\n"+ tigerName + " went out for a much needed bathroom break.");
+                        break;
+
+                    case 4:
+
+                        myPet.boredomScoreHigher();
+                        Console.WriteLine("\r\n\r\nYou went on a wild adventure with " + tigerName + "!!");
+                        break;
+
+                    case 5:
+
+                        myPet.fatigueScoreHigher();
+                        Console.WriteLine("\r\n\r\n" + tigerName + " is well-rested now thanks to a nice long cat nap.");
+                        break;
+
+                    case 6:
+
+                        myPet.hygieneScoreHigher();
+                        Console.WriteLine("\r\n\r\nWonderful!" + tigerName + " is sparkling clean!");
                         break;
 
                     case 7:
 
-                        Console.WriteLine("Thank you for playing.");
+                        Console.WriteLine("Thank you for playing.."+tigerName+" is gonna miss you!!");
                         break;
 
                     default:
