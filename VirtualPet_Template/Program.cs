@@ -26,16 +26,22 @@ namespace VirtualPet_Template
             //Keep user informed about the name they chose 
             Console.WriteLine("\r\n\r\nAwesome! Meet " + tigerName + ", your new pet tiger!");
 
-
+            //Declare int variable for user menu selection 
             int selectedOption;
 
+            //Create a do while loop for user menu with options
             do
             {
                 //TODO fill this out with more options to interact with the pet
-                Console.WriteLine();
-                Console.WriteLine("Please select an option");
-                Console.WriteLine("1. Feed the pet");
-                Console.WriteLine("10. Quit");
+                Console.Clear();
+                Console.WriteLine("Please select an option:");
+                Console.WriteLine("1 - Feed " + tigerName);
+                Console.WriteLine("2 - Give " + tigerName + " a drink of water.");
+                Console.WriteLine("3 - Take " + tigerName + " out for a bathroom break.");
+                Console.WriteLine("4 - Go on an exciting adventure with " + tigerName);
+                Console.WriteLine("5 - Let " + tigerName + " get some sleep.");
+                Console.WriteLine("6 - Give " + tigerName + " a bath.");
+                Console.WriteLine("7 - Quit the game.");
 
 
                 selectedOption = int.Parse(Console.ReadLine());
@@ -58,7 +64,7 @@ namespace VirtualPet_Template
                         Console.WriteLine("You cleaned your pet tiger!");
                         break;
 
-                    case 10:
+                    case 7:
 
                         Console.WriteLine("Thank you for playing.");
                         break;
