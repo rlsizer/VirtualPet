@@ -33,7 +33,8 @@ namespace VirtualPet_Template
             do
             {
                 //TODO fill this out with more options to interact with the pet
-                Console.Clear();
+                //Added seven menu options for user
+                Console.Clear(); //clear the console screen to give menu a fresh feel for each user selection
                 Console.WriteLine("Please select an option:");
                 Console.WriteLine("1 - Feed " + tigerName);
                 Console.WriteLine("2 - Give " + tigerName + " a drink of water.");
@@ -44,17 +45,20 @@ namespace VirtualPet_Template
                 Console.WriteLine("7 - Quit the game.");
 
 
+                //store user selection in variable and convert to int
                 selectedOption = int.Parse(Console.ReadLine());
 
+                //call on method to give pet status update
                 myPet.MyPetStatus();
 
+                //use switch case to determine reactions to user selections
                 switch (selectedOption)
                 {
                     //when the user selects option one we feed the pet
                     case 1:
 
-                        myPet.HungerDecrease();
-                        Console.WriteLine("Thank you for feeding the pet");
+                        myPet.HungerScoreHigher();
+                        Console.WriteLine("Thank you for feeding "+tigerName+"!");
                         break;
 
                     //TODO we need to add more cases for the other ways to interact with our pet

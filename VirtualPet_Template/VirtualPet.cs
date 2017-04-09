@@ -62,9 +62,21 @@ namespace VirtualPet_Template
 
         //this method can be called to alleviate the hunger and raise the hunger score (10 means tiger has a full stomach)
         public void HungerScoreHigher()
-        {   
+        {
             //TODO modify these values to anything you see fit
-            this.hunger = hunger +5;
+            if (hunger < 6)
+            {
+                //Change the member variable and use the parameter
+                this.hunger = hunger + 5;
+            }
+
+
+            else
+            {
+                //Alert user that there is a maximum cap of 100 hit points for the hero
+                Console.WriteLine("Your pet tiger is not that hungry right now.");
+            }
+            
         }
 
         
