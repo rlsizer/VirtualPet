@@ -58,7 +58,12 @@ namespace VirtualPet_Template
             {
                 this.hunger = hunger - 1;
             }
-            
+
+            else if (hunger == 0)
+            {
+                Console.WriteLine("\r\n\r\nOH NO!! YOU'VE BEEN EATEN BY THE TIGER!! STARVATION AIN'T NO JOKE!");
+                Environment.Exit(0);
+            }
         }
 
         //this method can be called to alleviate the hunger and raise the hunger score (10 means tiger has a full stomach)
@@ -82,6 +87,9 @@ namespace VirtualPet_Template
         }
 
         
+                
+         
+        
         //TODO we need to add more methods to modify the other fields
         
 
@@ -91,6 +99,12 @@ namespace VirtualPet_Template
             if (thirst <= 10 && thirst > 0)
             {
                 this.thirst = thirst - 1;
+            }
+
+            else if (thirst == 0)
+            {
+                Console.WriteLine("\r\n\r\nYOUR PET TIGER HAS DIED OF THIRST!! HOW COULD YOU DO THIS??");
+                Environment.Exit(0);
             }
             
         }
@@ -147,6 +161,12 @@ namespace VirtualPet_Template
             if (boredom <= 10 && boredom > 0)
             {
                 this.boredom = boredom - 1;
+            }
+
+            else if (boredom == 0)
+            {
+                Console.WriteLine("\r\n\r\nOH NO!! YOUR PET TIGER HAS RUN AWAY!! IT MUST'VE GOTTEN BORED!");
+                Environment.Exit(0);
             }
             
         }
@@ -245,6 +265,7 @@ namespace VirtualPet_Template
             
         }
 
+        //Create method for unpredictable pet actions
         public void UnpredictablePet()
         {
             switch (new Random().Next(1, 4))
