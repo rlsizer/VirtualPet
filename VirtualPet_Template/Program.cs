@@ -68,10 +68,10 @@ namespace VirtualPet_Template
                 Console.WriteLine();
                 Console.WriteLine(tigerName + " the Tiger");
                 Console.WriteLine("\r\n\r\nPlease select an option:");
-                Console.WriteLine("1 - Feed " + tigerName);
+                Console.WriteLine("1 - Feed " + tigerName+".");
                 Console.WriteLine("2 - Give " + tigerName + " a drink of water.");
                 Console.WriteLine("3 - Take " + tigerName + " out for a bathroom break.");
-                Console.WriteLine("4 - Go on an exciting adventure with " + tigerName);
+                Console.WriteLine("4 - Go on an exciting adventure with " + tigerName+".");
                 Console.WriteLine("5 - Let " + tigerName + " get some sleep.");
                 Console.WriteLine("6 - Give " + tigerName + " a bath.");
                 Console.WriteLine("7 - Quit the game.");
