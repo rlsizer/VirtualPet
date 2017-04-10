@@ -75,7 +75,8 @@ namespace VirtualPet_Template
                 Console.WriteLine("5 - Let " + tigerName + " get some sleep.");
                 Console.WriteLine("6 - Give " + tigerName + " a bath.");
                 Console.WriteLine("7 - Quit the game.");
-
+                Console.WriteLine();
+                Console.Write("> ");
 
                 //store user selection in variable and convert to int
                 selectedOption = int.Parse(Console.ReadLine());
