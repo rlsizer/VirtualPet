@@ -25,6 +25,7 @@ namespace VirtualPet_Template
 
             //Keep user informed about the name they chose 
             Console.WriteLine("\r\n\r\nAwesome! Meet " + tigerName + ", your new pet tiger!");
+            //Store ASCII art of tiger's face in a string; use Environment.NewLine to connect each line together
             string tigerFace = ("                           _" + Environment.NewLine+
 "        __       __       ' `." +Environment.NewLine+
 "      .'  `.  .-'\\`-.  ./   |" +Environment.NewLine+
@@ -134,6 +135,7 @@ namespace VirtualPet_Template
                     case 7:
 
                         Console.WriteLine("Thank you for playing.. "+tigerName+" is gonna miss you!!");
+                        Console.WriteLine("\r\n\r\nPlease help support Tiger conservation efforts: \r\n\r\nPeople and tigers increasingly compete for space.\r\nThe conflict threatens the world’s remaining wild tigers and poses a major problem for communities living in or near forests with tigers.\r\nAs forests shrink and prey gets scarce, tigers are forced to hunt domestic livestock, which many local communities depend on for their livelihood.\r\nIn retaliation, tigers are killed or captured.\r\n“Conflict” tigers are known to end up for sale in black markets.\r\nLocal community dependence on forests for fuelwood, food and timber heightens the risk of tiger attacks on people.\r\nContact the World Wildlife Foundation for more information.");
                         return;
 
                     default:
@@ -147,7 +149,8 @@ namespace VirtualPet_Template
                 Console.WriteLine(tigerFace);
                 //call on method to give pet status update
                 myPet.MyPetStatus();
-
+                //call on method to let pet do random stuff
+                myPet.UnpredictablePet();
                 //TODO We can put method calls here so the pet can have some values change automatically
                 //Feel free to add, remove, or modify which methods are called here
 
@@ -173,9 +176,9 @@ namespace VirtualPet_Template
                     myPet.HygieneScoreLower();
                     
                 }
-               
+
                 
-                
+
 
             } while (selectedOption != 7);
 

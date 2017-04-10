@@ -245,15 +245,33 @@ namespace VirtualPet_Template
             
         }
 
-        /* public void MyPetTimer()
+        public void UnpredictablePet()
         {
-            EventHandler temp = MyEvent;
-            if (temp != null)
+            switch (new Random().Next(1, 4))
             {
-                temp();
-            }
+                case 1:
+                    HungerScoreHigher();
+                    Console.WriteLine("\r\n\r\nTiger devoured some tasty wildebeest!");
+                    break;
 
-        }*/
+                case 2:
+                    ThirstScoreHigher();
+                    Console.WriteLine("\r\n\r\nTiger enjoyed a refreshing drink from the river.");
+                    break;
+
+                case 3:
+                    BoredomScoreHigher();
+                    Console.WriteLine("\r\n\r\nTiger ventured into the jungle for some fun and pranks!");
+                    break;
+
+                case 4:
+                    FatigueScoreHigher();
+                    Console.WriteLine("\r\n\r\nTiger sleepy! Time for a power cat nap!");
+                    break;
+
+                
+            }
+        }
 
     }
 }
