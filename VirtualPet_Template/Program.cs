@@ -76,6 +76,7 @@ namespace VirtualPet_Template
                 Console.WriteLine("6 - Give " + tigerName + " a bath.");
                 Console.WriteLine("7 - Quit the game.");
                 Console.WriteLine();
+                Console.WriteLine("**Try not to let tiger's stats reach zero.**");
                 Console.Write("> ");
 
                 //store user selection in variable and convert to int
