@@ -80,7 +80,7 @@ namespace VirtualPet_Template
 
                 //store user selection in variable and convert to int
                 selectedOption = int.Parse(Console.ReadLine());
-
+                Console.Clear();
                 
 
                 //use switch case to determine reactions to user selections
